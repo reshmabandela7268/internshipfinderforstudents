@@ -1,7 +1,6 @@
 from flask import Flask, render_template, request, redirect, url_for, flash
 from flask_mail import Mail, Message
 
-    app.run(debug=True)
 app = Flask(__name__)  
 app.secret_key = "your_secret_key"
 
@@ -47,3 +46,4 @@ def contact():
     return redirect(url_for("home"))
 
 if __name__ == "_main_":
+    app.run(debug=True)
